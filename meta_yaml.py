@@ -104,6 +104,6 @@ class MetaYamlPreprocessor(Preprocessor):
         return lines
 
 
-def makeExtension(configs={}):
+def makeExtension(*args, **kwargs):
     """set up extension."""
-    return MetaYamlExtension(configs=configs)
+    return MetaYamlExtension(*args, **kwargs)
